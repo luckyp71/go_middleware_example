@@ -47,9 +47,9 @@ func main() {
 	//App path
 	authenticatedUser := mux.NewRouter()
 	router.PathPrefix("/app").Handler(negroni.New(
-		//This is only applicable to /admin routes
+		//This is only applicable to /app routes
 		negroni.HandlerFunc(AuthHandler),
-		//Add your handlers here which is only applicable to /admin routes
+		//Add your handlers here which is only applicable to /app routes
 		negroni.Wrap(authenticatedUser),
 	))
 

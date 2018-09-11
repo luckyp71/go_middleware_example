@@ -1,4 +1,4 @@
-# GO Middleware Example
+# GO Middleware Example with Gorilla Mux and Negroni
 
 <p>Sometimes the term "middleware" in Go makes us really confused.</p>
 <p>So often we think that middleware is just another part of software which is doing orchestration,
